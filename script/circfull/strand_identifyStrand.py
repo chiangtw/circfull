@@ -159,7 +159,7 @@ def identifyStrand(rawFastq,outPrefix,thread,ThresholdLen=100):
             fq2=fastqFile.readline().strip()
             fq3=fastqFile.readline()
             fq4=fastqFile.readline()
-            ID=fq1.split()[0].split('_')[0][1:]
+            ID=fq1.split()[0][1:]
             if scoreDict.__contains__(ID):
                 continue
             leftSeq=fq2[0:ThresholdLen]

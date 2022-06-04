@@ -11,7 +11,7 @@ def createStrandFq(RG_dir,outPrefix,fastqFile):
             fq2=oldFq.readline().strip()
             fq3=oldFq.readline()
             fq4=oldFq.readline().strip()
-            ID=fq1.split()[0].split('_')[0][1:]
+            ID=fq1.split()[0][1:]
             if pSdict.__contains__(ID):
                 pro=pSdict[ID]
                 if pro<0.5:
